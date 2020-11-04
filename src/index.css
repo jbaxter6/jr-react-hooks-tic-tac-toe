@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,90 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: black; */
+  background-image: url("./cloud.jpg");
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 5rem;
+  font-family: 'Luckiest Guy';
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+}
+
+.board {
+  border: 1rem solid #F5F474;
+  background: #F5F474;
+  width: 500px;
+  height: 500px;
+  margin-left: 28%;
+  margin-top: -5%;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.squares {
+  background: #C1E7E3;
+  border: none;
+  font-size: 5rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+}
+
+.X {
+  color: #FE6B64;
+  font-weight: bold;
+  font-family: 'Luckiest Guy';
+}
+.O {
+  color: #77DD77;
+  font-weight: bold;
+  font-family: 'Luckiest Guy';
+}
+
+.infor-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+h3 {
+  padding: 1rem;
+  font-family: 'Luckiest Guy';
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.infor-wrapper button {
+  background: #F5F474;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
 }
